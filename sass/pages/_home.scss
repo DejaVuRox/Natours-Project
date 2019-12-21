@@ -30,6 +30,37 @@
 }
 
 .section-stories {
-  
-  background-color: $color-grey-light-1;
+  transform: translateY(-2rem);
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.section-book {
+  margin-top: -4rem;
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    RGBA($color-primary-light, 0.8),
+    RGBA($color-primary-dark, 0.8)
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+  height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+    transform: translateY(-61px)
+  }
 }
