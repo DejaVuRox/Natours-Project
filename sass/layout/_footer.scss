@@ -5,7 +5,7 @@
   color: $color-grey-light-1;
 
   @include respond(tab-port) {
-    padding: 3rem 0;
+    padding: 8rem 0 0 0;
   }
 
   &__logo {
@@ -23,6 +23,11 @@
     text-align: center;
     margin-bottom: 8rem;
     margin-bottom: -5rem;
+
+    @include respond(tab-port) {
+      margin-bottom: -4rem;
+      transform: translateY(-37px);
+    }
   }
 
   &__navigation {
@@ -34,6 +39,7 @@
     @include respond(tab-port) {
       width: 100%;
       text-align: center;
+      transform: translateY(10px);
     }
   }
 
